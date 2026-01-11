@@ -1,201 +1,245 @@
-# Maine Beacon Survival Kit Website
+# Second Mountain Internal Medicine, P.C. - Website
 
-A static website for the Maine Winter Survival Initiative, providing information about our mission to preserve lives and dignity by providing survival equipment and nourishment to homeless individuals in Maine's harshest conditions.
+A professional, modern, and accessible website for Second Mountain Internal Medicine, providing home-based primary care for homebound seniors in the Turner-Oxford Hills area of Maine.
 
-## Project Overview
+## Features
 
-This website was built based on the comprehensive branding guidelines and business plan for the Maine Winter Survival Initiative (Maine Beacon Kits). It features:
+- **Fully Responsive**: Mobile-first design that works beautifully on all devices
+- **Accessible**: WCAG 2.1 compliant with screen reader support, keyboard navigation, and high contrast modes
+- **Performance Optimized**: Fast loading times for older devices and rural internet connections
+- **SEO Optimized**: Local SEO keywords and proper meta tags for search visibility
+- **HIPAA-Ready**: Forms are placeholders for HIPAA-compliant integration
+- **No Framework Dependencies**: Pure HTML, CSS, and vanilla JavaScript for maximum compatibility
 
-- **Homepage**: Hero section with mission statement and key statistics
-- **About Us**: Mission, vision, core values, and founding team information
-- **Programs & Services**: Detailed information about Winter Survival Kits, MRE Distribution, Street Outreach, and Housing Connections
-- **Impact**: Projected three-year impact metrics and success measures
-- **Get Involved**: Partnership opportunities for funders, volunteers, corporate partners, and service providers
-- **Contact**: Contact form and leadership team information
+## Technology Stack
 
-## Branding
-
-The website follows the Maine Beacon branding guidelines:
-
-### Colors
-- **Stormy Navy**: #003D5B (Primary)
-- **Beacon Blue**: #2196F3 (Secondary)
-- **Lifeline Red**: #E53935 (Accent)
-- **Winter Gray**: #757575
-- **Light Gray**: #F5F5F5
-
-### Typography
-- **Headings**: Martel (Bold, Google Fonts)
-- **Body**: Montserrat (Google Fonts)
+- **HTML5**: Semantic markup for accessibility and SEO
+- **CSS3**: Modern styling with CSS custom properties (variables)
+- **Vanilla JavaScript**: No frameworks or dependencies for fast loading
+- **Google Fonts**: Inter (body) and Playfair Display (headings)
 
 ## File Structure
 
 ```
-maine-beacon-website/
-├── index.html           # Homepage
-├── about.html           # About Us page
-├── programs.html        # Programs & Services
-├── impact.html          # Impact metrics and stories
-├── get-involved.html    # Partnership opportunities
-├── contact.html         # Contact form and information
-├── css/
-│   └── style.css        # Main stylesheet with responsive design
-├── js/
-│   └── main.js          # JavaScript for mobile menu, animations, form handling
-├── images/              # Placeholder for images
-├── netlify.toml         # Netlify deployment configuration
-└── README.md            # This file
+second-mountain-website/
+├── index.html          # Main HTML file with all content
+├── styles.css          # Complete styling including responsive design
+├── script.js           # Interactive functionality
+└── README.md           # This file
 ```
 
-## Deployment to Netlify
+## Quick Start - Netlify Deployment
 
-### Option 1: Netlify CLI (Recommended)
+### Option 1: Drag & Drop (Easiest)
 
-1. Install Netlify CLI if not already installed:
+1. Visit [Netlify Drop](https://app.netlify.com/drop)
+2. Drag the entire `second-mountain-website` folder onto the page
+3. Your site will be live immediately with a Netlify URL
+4. You can then configure a custom domain in Netlify settings
+
+### Option 2: Git Deployment (Recommended for Updates)
+
+1. Create a Git repository:
    ```bash
-   npm install -g netlify-cli
-   ```
-
-2. Navigate to the project directory:
-   ```bash
-   cd maine-beacon-website
-   ```
-
-3. Deploy to Netlify:
-   ```bash
-   netlify deploy --prod
-   ```
-
-4. Follow the prompts:
-   - Authorize with your Netlify account
-   - Create a new site or link to existing
-   - Publish directory: `.` (current directory)
-
-### Option 2: Netlify Web Interface
-
-1. Create a ZIP file of the entire `maine-beacon-website` folder
-
-2. Go to [Netlify](https://www.netlify.com/)
-
-3. Sign up or log in to your account
-
-4. Click "Add new site" → "Deploy manually"
-
-5. Drag and drop the folder or ZIP file
-
-6. Your site will be deployed with a random Netlify subdomain (e.g., `random-name-123.netlify.app`)
-
-7. You can customize the subdomain in Site Settings → Domain Management
-
-### Option 3: Git-based Deployment
-
-1. Initialize a Git repository:
-   ```bash
+   cd second-mountain-website
    git init
    git add .
-   git commit -m "Initial commit - Maine Beacon website"
+   git commit -m "Initial commit"
    ```
 
-2. Push to GitHub, GitLab, or Bitbucket
+2. Push to GitHub/GitLab:
+   ```bash
+   git remote add origin [your-repo-url]
+   git push -u origin main
+   ```
 
-3. In Netlify, click "Add new site" → "Import an existing project"
+3. Connect to Netlify:
+   - Log in to [Netlify](https://app.netlify.com)
+   - Click "Add new site" → "Import an existing project"
+   - Connect your Git repository
+   - Deploy settings are automatic (no build command needed)
+   - Click "Deploy site"
 
-4. Connect to your Git provider and select the repository
+### Option 3: Netlify CLI
 
-5. Netlify will automatically deploy on every push to the main branch
+```bash
+npm install -g netlify-cli
+cd second-mountain-website
+netlify deploy --prod
+```
 
 ## Custom Domain Setup
 
-Once deployed, you can connect a custom domain:
-
-1. Purchase a domain (recommended: `mainebeacon.org` or `mainewintersurvival.org`)
-
-2. In Netlify, go to Site Settings → Domain Management → Add custom domain
-
-3. Follow the DNS configuration instructions provided by Netlify
-
-## Features
-
-### Responsive Design
-- Mobile-first approach
-- Hamburger menu for mobile devices
-- Flexible grid layouts that adapt to screen sizes
-
-### Animations
-- Fade-in animations on scroll
-- Counter animations for statistics
-- Smooth scrolling for anchor links
-- Header shadow on scroll
-
-### Accessibility
-- Semantic HTML structure
-- ARIA labels for icons and links
-- High contrast color combinations
-- Keyboard navigation support
-
-### Performance
-- Optimized CSS with modern layout techniques
-- Minimal JavaScript for core functionality
-- Fast loading times
-- Caching headers configured in netlify.toml
-
-## Customization
-
-### Adding Images
-
-Replace the placeholder Unsplash images with real photos:
-
-1. Add images to the `images/` folder
-2. Update image `src` attributes in the HTML files
-3. Recommended sizes:
-   - Hero images: 1920x800px minimum
-   - Card images: 1200x800px (3:2 ratio)
-   - Team photos: 500x500px (square)
-
-### Updating Content
-
-All content is in the HTML files. Key sections to customize:
-
-- Team member bios in `about.html`
-- Contact email addresses throughout
-- Social media links in footers
-- Statistics and metrics
-
-### Form Integration
-
-The contact form currently shows a JavaScript alert on submission. To connect it to a real backend:
-
-1. Use Netlify Forms (easiest):
-   - Add `netlify` attribute to the `<form>` tag
-   - Netlify will automatically handle form submissions
-
-2. Use a third-party service:
-   - Formspree
-   - EmailJS
-   - SendGrid
-
-3. Build a custom backend:
-   - Create an API endpoint
-   - Update the form submission handler in `js/main.js`
+1. In Netlify dashboard, go to "Domain settings"
+2. Click "Add custom domain"
+3. Follow DNS configuration instructions
+4. Enable HTTPS (automatic with Let's Encrypt)
 
 ## Browser Support
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
+- Chrome/Edge (last 2 versions)
+- Firefox (last 2 versions)
+- Safari (last 2 versions)
+- iOS Safari (last 2 versions)
+- Android Chrome (last 2 versions)
+- Internet Explorer 11 (basic functionality)
 
-## License
+## Important Notes & Next Steps
 
-Copyright 2025 Maine Winter Survival Initiative. All rights reserved.
+### HIPAA Compliance
 
-## Contact
+The forms on this website are **placeholders only**. Before accepting real patient information, you MUST:
 
-For questions about this website:
-- Email: info@mainebeacon.org
-- Location: Portland, Maine
+1. **Integrate HIPAA-compliant form handling**:
+   - Recommended services: Jotform HIPAA, Formstack, or Cognito Forms
+   - Alternative: Build custom backend with proper encryption and BAA
+
+2. **Update form actions** in `index.html`:
+   - Currently forms use JavaScript preventDefault()
+   - Replace with secure form submission endpoints
+
+3. **Add SSL/TLS**: Netlify provides this automatically
+
+4. **Add privacy policy and terms of service pages**
+
+### Content Updates Needed
+
+Review the following sections in `index.html` and update with Dr. Matulis's input:
+
+1. **Line 140**: Add Dr. Matulis's personal paragraph about why he chose home-based care
+2. **Line 355**: Confirm after-hours protocol
+3. **Line 363**: Confirm Medicare Advantage acceptance policy
+4. **Line 206**: Add fax number if available
+5. **Line 391**: Add email address if applicable
+6. **Line 404**: Add physical office address if applicable
+7. **Doctor's photo**: Replace placeholder with actual photo
+
+### SEO & Marketing Setup
+
+1. **Google Business Profile**:
+   - Create/claim listing
+   - Add accurate service area
+   - Link to website
+
+2. **Google Analytics**:
+   - Create GA4 property
+   - Add tracking code to `script.js` (line 400+)
+
+3. **Google Search Console**:
+   - Verify site ownership
+   - Submit sitemap
+
+4. **Social Media Meta Tags**:
+   - Add og:image with practice logo/photo
+   - Update meta descriptions as needed
+
+### Performance Optimization
+
+The site is already optimized, but for further improvements:
+
+1. **Images**: When adding doctor's photo:
+   - Optimize to WebP format
+   - Maximum 800px width recommended
+   - Use lazy loading: `<img loading="lazy">`
+
+2. **Critical CSS**: Already inline, no action needed
+
+3. **Caching**: Netlify handles this automatically
+
+### Accessibility Testing
+
+Test with:
+- Screen readers (NVDA, JAWS, VoiceOver)
+- Keyboard-only navigation (Tab, Enter, Esc)
+- Color contrast checkers
+- Mobile device testing (real devices preferred)
+
+### Local Development
+
+To test locally, you can use any local server:
+
+**Python 3**:
+```bash
+cd second-mountain-website
+python -m http.server 8000
+# Visit http://localhost:8000
+```
+
+**Node.js**:
+```bash
+npx serve second-mountain-website
+```
+
+**VS Code Live Server**:
+- Install "Live Server" extension
+- Right-click `index.html` → "Open with Live Server"
+
+## Color Scheme
+
+The website uses a calming, trustworthy healthcare color palette:
+
+- **Primary Blue**: `#2563eb` - Trust, professionalism, calm
+- **Secondary Green**: `#059669` - Health, growth, vitality
+- **Neutral Grays**: Professional backgrounds and text
+- **Accent Tints**: Light blues and greens for backgrounds
+
+## Typography
+
+- **Headings**: Playfair Display (serif) - Classic, trustworthy
+- **Body**: Inter (sans-serif) - Modern, highly readable
+
+## Contact Information
+
+All instances of contact information:
+- **Phone**: 207-492-4642 (click-to-call enabled)
+- **Service Area**: Turner-Oxford Hills, Maine
+- **Practice Type**: Home-based primary care
+
+## Support & Maintenance
+
+### Common Updates
+
+**Update phone number**: Search and replace `207-492-4642` in `index.html`
+
+**Update service area**: Edit the "Service Area" section starting at line 321
+
+**Add new FAQ**: Copy an existing `.faq-item-full` div and update content
+
+**Change colors**: Update CSS variables in `styles.css` lines 12-27
+
+### Troubleshooting
+
+**Mobile menu not working**: Check JavaScript console for errors
+
+**Forms not submitting**: Check console logs (forms currently log data only)
+
+**Styles not loading**: Verify `styles.css` is in the same directory as `index.html`
+
+## License & Usage
+
+This website was created specifically for Second Mountain Internal Medicine, P.C.
+
+## Version History
+
+- **v1.0.0** (January 2026): Initial launch
+  - Complete website with all content sections
+  - Responsive design for all devices
+  - Placeholder forms for HIPAA integration
+  - SEO optimization
+  - Accessibility features
+
+## Credits
+
+- **Design & Development**: Claude Code by Anthropic
+- **Fonts**: Google Fonts (Inter, Playfair Display)
+- **Icons**: Inline SVG (no dependencies)
+
+## Contact for Technical Support
+
+For technical issues with the website, refer to this README or contact your web developer.
+
+For practice information, call: **207-492-4642**
 
 ---
 
-Built with care for Maine's unsheltered population. 🗼❄️
+**Ready to Deploy!** Simply drag the folder to Netlify or follow the deployment steps above.

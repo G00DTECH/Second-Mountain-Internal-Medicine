@@ -3,243 +3,844 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Maine Winter Survival Initiative provides life-saving survival equipment and MREs to unsheltered individuals facing Maine's deadly winter conditions.">
-    <meta name="keywords" content="Maine homeless services, winter survival kits, homeless support Portland, MRE distribution, emergency shelter Maine">
-    <title>Maine Beacon Survival Kit - Supporting Maine's Unsheltered</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Second Mountain Internal Medicine provides comprehensive home-based primary care for homebound seniors in Turner and Oxford Hills, Maine. Traditional Medicare accepted. Call 207-492-4642.">
+    <meta name="keywords" content="home doctor Turner Maine, house call doctor Oxford Hills, homebound primary care Maine, Medicare home visits Oxford County, doctor who makes house calls">
+    <meta name="author" content="Dr. John C. Matulis, DO, MPH">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Second Mountain Internal Medicine - Primary Care That Comes to You">
+    <meta property="og:description" content="Comprehensive home-based primary care for homebound seniors in Turner-Oxford Hills, Maine. Traditional Medicare accepted.">
+    <meta property="og:type" content="website">
+
+    <title>Second Mountain Internal Medicine, P.C. - Home-Based Primary Care in Turner & Oxford Hills, Maine</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                Maine Winter Survival Initiative
-            </div>
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="programs.html">Programs</a></li>
-                    <li><a href="impact.html">Impact</a></li>
-                    <li><a href="get-involved.html">Get Involved</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="get-involved.html" class="btn btn-primary">Partner With Us</a></li>
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#home" class="logo">
+                    <span class="logo-text">Second Mountain</span>
+                    <span class="logo-subtitle">Internal Medicine, P.C.</span>
+                </a>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#who-we-serve" class="nav-link">Who We Serve</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#medicare" class="nav-link">Medicare & Eligibility</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="tel:207-492-4642" class="nav-link nav-phone">207-492-4642</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
-    </header>
+    </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Supporting Maine's Unsheltered</h1>
-            <p>Preserving dignity and saving lives through critical winter survival equipment and nutrition for Maine's most vulnerable.</p>
-            <div class="hero-buttons">
-                <a href="get-involved.html" class="btn btn-primary">Partner With Us</a>
-                <a href="about.html" class="btn btn-secondary">Learn About Our Mission</a>
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Primary Care That Comes to You</h1>
+                <p class="hero-subtitle">Comprehensive, ongoing medical care for homebound seniors in the Turner–Oxford Hills area. Traditional Medicare accepted.</p>
+                <div class="hero-cta">
+                    <a href="tel:207-492-4642" class="btn btn-primary btn-large">
+                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 3C2 2.44772 2.44772 2 3 2H5.15287C5.64171 2 6.0589 2.35341 6.13927 2.8356L6.87858 7.27147C6.95075 7.70451 6.73206 8.13397 6.3394 8.3303L4.79126 9.10437C5.90756 11.8783 8.12168 14.0924 10.8956 15.2087L11.6697 13.6606C11.866 13.2679 12.2955 13.0492 12.7285 13.1214L17.1644 13.8607C17.6466 13.9411 18 14.3583 18 14.8471V17C18 17.5523 17.5523 18 17 18H15C7.8203 18 2 12.1797 2 5V3Z" fill="currentColor"/>
+                        </svg>
+                        Call or Text: 207-492-4642
+                    </a>
+                    <a href="#contact" class="btn btn-secondary btn-large">
+                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.00333 5.88355L9.99995 9.88186L17.9967 5.8835C17.9363 4.83315 17.0655 4 16 4H4C2.93452 4 2.06363 4.83318 2.00333 5.88355Z" fill="currentColor"/>
+                            <path d="M18 8.1179L9.99995 12.1179L2 8.11796V14C2 15.1046 2.89543 16 4 16H16C17.1046 16 18 15.1046 18 14V8.1179Z" fill="currentColor"/>
+                        </svg>
+                        Refer a Patient
+                    </a>
+                </div>
+                <div class="trust-bar">
+                    <span class="trust-item">Traditional Medicare Accepted</span>
+                    <span class="trust-divider">•</span>
+                    <span class="trust-item">Home Visits</span>
+                    <span class="trust-divider">•</span>
+                    <span class="trust-item">Board-Certified Internal Medicine</span>
+                    <span class="trust-divider">•</span>
+                    <span class="trust-item">Locally Owned</span>
+                </div>
             </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0L60 10C120 20 240 40 360 46.7C480 53 600 47 720 43.3C840 40 960 40 1080 46.7C1200 53 1320 67 1380 73.3L1440 80V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0V0Z" fill="white"/>
+            </svg>
         </div>
     </section>
 
-    <!-- Statistics Section -->
-    <section class="statistics">
+    <!-- Problem Solution Section -->
+    <section class="problem-solution">
         <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item fade-in">
-                    <div class="stat-icon">281</div>
-                    <div class="stat-number" data-target="281">0</div>
-                    <div class="stat-label">Unsheltered Individuals</div>
+            <div class="two-column">
+                <div class="column problem-column">
+                    <h2 class="section-title">The Problem</h2>
+                    <p class="large-text">For frail seniors, getting to the doctor can mean missed appointments, emergency room visits, and preventable hospital readmissions. Many families are left scrambling to coordinate transportation, manage multiple specialists, and worry about whether their loved one is getting the care they need.</p>
                 </div>
-                <div class="stat-item fade-in">
-                    <div class="stat-icon">-30°</div>
-                    <div class="stat-number">-30°F</div>
-                    <div class="stat-label">Wind Chill Extremes</div>
-                </div>
-                <div class="stat-item fade-in">
-                    <div class="stat-icon">51</div>
-                    <div class="stat-number" data-target="51">0</div>
-                    <div class="stat-label">Deaths in 2024</div>
-                </div>
-            </div>
-            <div class="stats-description">
-                <p>Maine's 2025 count shows 281 unsheltered persons facing life-threatening winter conditions. With temperatures plunging to -30°F wind chills and 51 documented homeless deaths in Portland alone, there is no systematic program distributing survival equipment and MREs to the state's unsheltered population.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Solutions Section -->
-    <section class="solutions">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Solution</h2>
-                <p>Meeting people where they are with dignity and life-saving support</p>
-            </div>
-            <div class="solutions-grid">
-                <div class="solution-card fade-in">
-                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&h=400&fit=crop" alt="Winter survival kit with sleeping bag and supplies">
-                    <div class="solution-content">
-                        <h3>Winter Survival Kits</h3>
-                        <p>Cold-weather sleeping bags rated to 0°F, emergency blankets, hand and foot warmers, and weatherproof tarps distributed directly to those in need.</p>
-                    </div>
-                </div>
-                <div class="solution-card fade-in">
-                    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&h=400&fit=crop" alt="MRE meals and nutrition supplies">
-                    <div class="solution-content">
-                        <h3>MRE Nutrition Program</h3>
-                        <p>Shelf-stable, high-calorie meals requiring no preparation, providing 3 days of critical nutrition to sustain individuals in harsh conditions.</p>
-                    </div>
-                </div>
-                <div class="solution-card fade-in">
-                    <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=600&h=400&fit=crop" alt="Street outreach connecting people to resources">
-                    <div class="solution-content">
-                        <h3>Pathways to Housing</h3>
-                        <p>Every interaction connects individuals to Maine's Coordinated Entry system, rapid rehousing programs, and permanent housing solutions.</p>
-                    </div>
+                <div class="column solution-column">
+                    <h2 class="section-title">The Solution</h2>
+                    <p class="large-text">We bring the doctor to them. Dr. Matulis provides primary care in the comfort of your loved one's home—managing chronic conditions, coordinating with specialists, and keeping patients out of the hospital.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Mission Section -->
-    <section class="mission">
+    <!-- Who This Is For -->
+    <section class="who-for">
         <div class="container">
-            <h2>Our Mission</h2>
-            <p>To preserve lives and dignity by providing survival equipment and nourishment to homeless individuals in Maine's harshest conditions, while connecting them to pathways toward permanent housing.</p>
-        </div>
-    </section>
-
-    <!-- Values Section -->
-    <section class="values">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Core Values</h2>
-            </div>
-            <div class="values-grid">
-                <div class="value-item fade-in">
-                    <div class="value-icon">1</div>
-                    <div class="value-content">
-                        <h3>Dignity First</h3>
-                        <p>Every interaction treats recipients as neighbors deserving respect, not charity cases. Distribution practices emphasize choice, privacy, and autonomy.</p>
+            <h2 class="section-title centered">Who We Serve</h2>
+            <div class="three-column">
+                <div class="card">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 22V12H15V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </div>
+                    <h3 class="card-title">Homebound Seniors</h3>
+                    <p class="card-text">If leaving home for a doctor's appointment is difficult or impossible, we come to you. Get the same quality primary care you'd receive in an office—without the struggle of getting there.</p>
+                    <a href="#who-we-serve" class="card-link">Learn more about our services →</a>
                 </div>
-                <div class="value-item fade-in">
-                    <div class="value-icon">2</div>
-                    <div class="value-content">
-                        <h3>Life-Saving Urgency</h3>
-                        <p>Maine winters kill. When temperatures threaten survival, we maintain emergency deployment capability for severe weather events.</p>
+                <div class="card">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.84 4.61C20.3292 4.099 19.7228 3.69364 19.0554 3.41708C18.3879 3.14052 17.6725 2.998 16.95 2.998C16.2275 2.998 15.5121 3.14052 14.8446 3.41708C14.1772 3.69364 13.5708 4.099 13.06 4.61L12 5.67L10.94 4.61C9.9083 3.57831 8.50903 2.99871 7.05 2.99871C5.59096 2.99871 4.19169 3.57831 3.16 4.61C2.1283 5.64169 1.54871 7.04097 1.54871 8.5C1.54871 9.95903 2.1283 11.3583 3.16 12.39L4.22 13.45L12 21.23L19.78 13.45L20.84 12.39C21.351 11.8792 21.7563 11.2728 22.0329 10.6053C22.3095 9.93789 22.452 9.22248 22.452 8.5C22.452 7.77752 22.3095 7.06211 22.0329 6.39469C21.7563 5.72728 21.351 5.12084 20.84 4.61V4.61Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </div>
+                    <h3 class="card-title">Families & Caregivers</h3>
+                    <p class="card-text">Caring for an aging parent is hard enough. We partner with you to manage your loved one's health, answer your questions, and give you peace of mind knowing they have a doctor who truly knows them.</p>
+                    <a href="#who-we-serve" class="card-link">How we work with families →</a>
                 </div>
-                <div class="value-item fade-in">
-                    <div class="value-icon">3</div>
-                    <div class="value-content">
-                        <h3>Pathway, Not Endpoint</h3>
-                        <p>Survival equipment sustains life; housing restores it. Every kit includes information connecting recipients to housing services.</p>
+                <div class="card">
+                    <div class="card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 21V5C19 4.46957 18.7893 3.96086 18.4142 3.58579C18.0391 3.21071 17.5304 3 17 3H7C6.46957 3 5.96086 3.21071 5.58579 3.58579C5.21071 3.96086 5 4.46957 5 5V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 7H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 11H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 21H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </div>
-                </div>
-                <div class="value-item fade-in">
-                    <div class="value-icon">4</div>
-                    <div class="value-content">
-                        <h3>Veteran Commitment</h3>
-                        <p>Founded by a veteran, we prioritize reaching homeless veterans who increased 10% in Maine's 2025 count despite overall population decreases.</p>
-                    </div>
+                    <h3 class="card-title">Hospitals & Care Coordinators</h3>
+                    <p class="card-text">Reduce readmissions and close the loop on discharge. We accept referrals for homebound patients who need ongoing primary care—not just a single post-discharge visit.</p>
+                    <a href="#contact" class="card-link">Refer a patient →</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Impact Section -->
-    <section class="impact">
+    <!-- Why Second Mountain -->
+    <section class="why-section">
         <div class="container">
-            <div class="section-title">
-                <h2>Projected Impact</h2>
-                <p>Our three-year expansion plan across Maine's most affected cities</p>
-            </div>
-            <div class="impact-metrics">
-                <div class="metric-card fade-in">
-                    <div class="metric-number" data-target="2000">0</div>
-                    <div class="metric-label">Individuals Served by Year 3</div>
+            <h2 class="section-title centered">Why Second Mountain</h2>
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="why-icon">✓</div>
+                    <h3>Longitudinal Care</h3>
+                    <p>Same doctor, every visit. Not rotating providers.</p>
                 </div>
-                <div class="metric-card fade-in">
-                    <div class="metric-number" data-target="4500">0</div>
-                    <div class="metric-label">Survival Kits Distributed</div>
+                <div class="why-item">
+                    <div class="why-icon">✓</div>
+                    <h3>More Time</h3>
+                    <p>45–60 minute home visits, not rushed 10-minute appointments.</p>
                 </div>
-                <div class="metric-card fade-in">
-                    <div class="metric-number" data-target="27000">0</div>
-                    <div class="metric-label">MREs Provided</div>
+                <div class="why-item">
+                    <div class="why-icon">✓</div>
+                    <h3>Fewer ER Visits</h3>
+                    <p>Proactive care catches problems before they become emergencies.</p>
                 </div>
-                <div class="metric-card fade-in">
-                    <div class="metric-number">3</div>
-                    <div class="metric-label">Cities Served</div>
+                <div class="why-item">
+                    <div class="why-icon">✓</div>
+                    <h3>Better Medication Management</h3>
+                    <p>We see what's actually in your medicine cabinet.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">✓</div>
+                    <h3>Coordination</h3>
+                    <p>We work with your specialists, home health, and family.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta">
+    <!-- Quick FAQ on Homepage -->
+    <section class="quick-faq">
         <div class="container">
-            <h2>Help Us Fill This Critical Gap</h2>
-            <p>We're seeking foundation grants, corporate partnerships, and community support to launch Maine's first systematic survival equipment distribution program.</p>
-            <div class="hero-buttons">
-                <a href="get-involved.html" class="btn btn-secondary">Partner With Us</a>
-                <a href="contact.html" class="btn btn-outline" style="border-color: white; color: white;">Contact Us</a>
+            <h2 class="section-title centered">Common Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 class="faq-question">Is this real primary care, or just one-time visits?</h3>
+                    <p class="faq-answer">This is real, ongoing primary care. Dr. Matulis becomes your primary care physician—managing your conditions over time, not just checking in once.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Will I lose my current doctor?</h3>
+                    <p class="faq-answer">That's your choice. Many patients transition fully to our care. Others keep specialists and use us for primary care only. We coordinate either way.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">What if my mom needs to go to the ER?</h3>
+                    <p class="faq-answer">Call 911 for emergencies. We'll follow up after any ER visit or hospitalization to make sure the transition home goes smoothly.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Does this cost extra?</h3>
+                    <p class="faq-answer">For most Traditional Medicare patients, there's no additional cost beyond standard Medicare copays. We don't charge concierge fees.</p>
+                </div>
+            </div>
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="#faq" class="btn btn-secondary">See All FAQs →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-intro">
+                <h2 class="section-title centered">About Second Mountain</h2>
+                <div class="content-box">
+                    <h3 class="subsection-title">Why "Second Mountain"?</h3>
+                    <p>The name "Second Mountain" comes from a concept popularized by author David Brooks: the idea that after climbing the first mountain of career success and personal achievement, many people discover a second mountain—one focused on service, commitment, and deeper purpose.</p>
+                    <p>For Dr. Matulis, home-based primary care is that second mountain. It's medicine the way it used to be practiced—and the way it should be for patients who can't easily leave home.</p>
+                    <p>For the patients we serve, this is often their second mountain too: a stage of life focused on what matters most—health, dignity, and time with family.</p>
+                </div>
+            </div>
+
+            <div class="model-of-care">
+                <h3 class="subsection-title">What "Longitudinal Care" Means</h3>
+                <p>Longitudinal care means we're not here for a single visit. Dr. Matulis becomes your ongoing primary care physician—the doctor who knows your history, understands your goals, and sees you regularly over months and years.</p>
+                <p class="highlight-text">This isn't urgent care at home. It's a relationship.</p>
+            </div>
+
+            <div class="comparison-table">
+                <h3 class="subsection-title centered">How Home-Based Care Is Different</h3>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Traditional Office Medicine</th>
+                                <th>Second Mountain</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10-15 minute appointments</td>
+                                <td>45-60 minute home visits</td>
+                            </tr>
+                            <tr>
+                                <td>You travel to the office</td>
+                                <td>We come to you</td>
+                            </tr>
+                            <tr>
+                                <td>May see different providers</td>
+                                <td>Same doctor, every visit</td>
+                            </tr>
+                            <tr>
+                                <td>Reactive: come in when sick</td>
+                                <td>Proactive: regular visits to prevent problems</td>
+                            </tr>
+                            <tr>
+                                <td>Limited view of home environment</td>
+                                <td>Full picture: medications, safety, living situation</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Dr. Matulis Profile -->
+            <div class="doctor-profile">
+                <h3 class="subsection-title">Dr. John C. Matulis, DO, MPH</h3>
+                <div class="two-column">
+                    <div class="column">
+                        <div class="doctor-image-placeholder">
+                            <svg width="120" height="120" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <p class="image-note">[Photo to be provided]</p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h4>Training & Credentials</h4>
+                        <ul class="credentials-list">
+                            <li>Doctor of Osteopathic Medicine (DO)</li>
+                            <li>Master of Public Health (MPH)</li>
+                            <li>Board-Certified in Internal Medicine</li>
+                        </ul>
+
+                        <h4>What is a DO?</h4>
+                        <p>A Doctor of Osteopathic Medicine (DO) is a fully licensed physician who can prescribe medications, perform procedures, and practice in all medical specialties—just like an MD. DOs receive additional training in the musculoskeletal system and often emphasize a whole-person approach to care.</p>
+
+                        <h4>Public Health Perspective</h4>
+                        <p>Dr. Matulis's Master of Public Health training informs his approach to care. He sees each patient not just as an individual case, but as part of a larger picture—understanding how social factors, access to care, and community resources affect health outcomes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Serve Detailed -->
+    <section id="who-we-serve" class="who-serve-detailed">
+        <div class="container">
+            <h2 class="section-title centered">Who We Serve - Detailed</h2>
+
+            <div class="serve-section">
+                <h3 class="subsection-title">Homebound Seniors</h3>
+                <div class="content-box">
+                    <h4>You May Be a Good Fit If:</h4>
+                    <ul class="checkmark-list">
+                        <li>Leaving home for appointments requires significant help or special transportation</li>
+                        <li>You've missed appointments because getting there is too hard</li>
+                        <li>You have multiple chronic conditions that need regular management</li>
+                        <li>You've had repeated ER visits or hospitalizations</li>
+                        <li>You use a wheelchair, walker, or are bed-bound</li>
+                        <li>You have dementia or cognitive impairment that makes travel difficult</li>
+                    </ul>
+
+                    <h4>What to Expect</h4>
+                    <p>Dr. Matulis will come to your home—whether that's your own house, an assisted living facility, or a family member's home. Visits typically last 45-60 minutes. He'll bring the equipment needed for a thorough exam, can order labs and imaging, adjust medications, and coordinate with any specialists you see.</p>
+                    <p class="highlight-text">You'll see the same doctor every time. No rotating providers. No starting over.</p>
+                </div>
+            </div>
+
+            <div class="serve-section">
+                <h3 class="subsection-title">Families & Caregivers</h3>
+                <div class="content-box">
+                    <h4>We're Your Partner</h4>
+                    <p>Caring for an aging parent—especially one who can't easily leave home—is exhausting. You're juggling appointments, medications, and worry. You're wondering if you're doing enough, or if something is being missed.</p>
+                    <p class="highlight-text">We're here to help carry that weight.</p>
+
+                    <h4>What We Do for Families</h4>
+                    <ul class="checkmark-list">
+                        <li><strong>Regular updates:</strong> We communicate with family members (with patient permission) about care plans and changes.</li>
+                        <li><strong>Medication review:</strong> We look at everything in the medicine cabinet—prescribed and otherwise—and simplify where possible.</li>
+                        <li><strong>Care coordination:</strong> We work with specialists, home health agencies, and other providers so you don't have to chase down records.</li>
+                        <li><strong>Honest conversations:</strong> We'll talk with you about what to expect, what's realistic, and what your loved one's wishes are.</li>
+                        <li><strong>Availability:</strong> Call or text with questions. You shouldn't have to wait for an appointment to get answers.</li>
+                    </ul>
+
+                    <h4>You Can Be Present for Visits</h4>
+                    <p>Family members are welcome to join home visits. This is often when the best conversations happen—when everyone is in the same room, asking questions, and making plans together.</p>
+                </div>
+            </div>
+
+            <div class="serve-section">
+                <h3 class="subsection-title">Hospitals & Discharge Planners</h3>
+                <div class="content-box">
+                    <h4>Close the Loop on Discharge</h4>
+                    <p>You know the patients who are going to bounce back. The ones without reliable primary care. The ones who can't get to follow-up appointments. The ones whose home situation is a black box.</p>
+                    <p class="highlight-text">We can help.</p>
+
+                    <h4>What We Offer Referring Providers</h4>
+                    <ul class="checkmark-list">
+                        <li><strong>Rapid intake:</strong> We can often see patients within days of discharge.</li>
+                        <li><strong>Medication reconciliation:</strong> We verify what's actually being taken at home.</li>
+                        <li><strong>Ongoing primary care:</strong> Not just a single transitional care visit—we become their PCP.</li>
+                        <li><strong>Communication:</strong> We send visit notes and stay in the loop with the care team.</li>
+                        <li><strong>Reduced readmissions:</strong> Proactive home-based care keeps patients out of the hospital.</li>
+                    </ul>
+
+                    <h4>How to Refer</h4>
+                    <ol>
+                        <li>Call or text: <a href="tel:207-492-4642">207-492-4642</a></li>
+                        <li>Use our secure online referral form</li>
+                    </ol>
+                    <a href="#contact" class="btn btn-primary">Refer a Patient →</a>
+                </div>
+            </div>
+
+            <div class="serve-section">
+                <h3 class="subsection-title">Skilled Nursing & Home Health Agencies</h3>
+                <div class="content-box">
+                    <h4>A Partner, Not a Competitor</h4>
+                    <p>We work alongside home health agencies and skilled nursing facilities—not in place of them. When your patients need a primary care physician who can actually see them at home, we're here.</p>
+
+                    <h4>How We Work Together</h4>
+                    <ul class="checkmark-list">
+                        <li>We sign orders and provide oversight for home health services</li>
+                        <li>We're available to discuss patient status and adjust care plans</li>
+                        <li>We can see patients in assisted living facilities and group homes</li>
+                        <li>We communicate directly with your clinical staff</li>
+                    </ul>
+
+                    <p>If you have patients who need a primary care provider willing to do home visits, let's talk.</p>
+                    <a href="#contact" class="btn btn-secondary">Contact Us →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2 class="section-title centered">Our Services</h2>
+            <p class="section-intro centered">Comprehensive medical care delivered in the comfort of your home</p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Primary Care at Home</h3>
+                    <p>Complete primary care services delivered in your home. Annual wellness visits, preventive care, and ongoing management of your health—all without leaving the house.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Chronic Disease Management</h3>
+                    <p>Ongoing management of conditions like diabetes, heart failure, COPD, hypertension, and kidney disease. Regular monitoring, medication adjustments, and coordination with specialists to keep conditions controlled and prevent complications.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Post-Hospital Follow-Up</h3>
+                    <p>The days after a hospital discharge are high-risk. We provide prompt follow-up visits to review discharge instructions, reconcile medications, and catch problems before they lead to readmission.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Medication Management</h3>
+                    <p>We review all your medications—including over-the-counter drugs and supplements—to check for interactions, eliminate unnecessary medications, and ensure everything is working together safely.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Dementia & Cognitive Care</h3>
+                    <p>Specialized care for patients with Alzheimer's disease and other forms of dementia. We work with families to manage symptoms, plan for the future, and maintain quality of life.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Frailty & Functional Decline</h3>
+                    <p>For patients dealing with general decline, weakness, or multiple age-related conditions, we focus on maintaining function, preventing falls, and supporting independence as long as possible.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Palliative Support (Non-Hospice)</h3>
+                    <p>Palliative care focuses on comfort and quality of life for patients with serious illness—whether or not they're pursuing curative treatment. This is not hospice; it's an extra layer of support alongside regular medical care.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Care Coordination</h3>
+                    <p>We communicate with your specialists, order labs and imaging, coordinate with home health agencies, and make sure everyone involved in your care is on the same page.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Medicare & Eligibility Section -->
+    <section id="medicare" class="medicare-section">
+        <div class="container">
+            <h2 class="section-title centered">Medicare & Eligibility</h2>
+
+            <div class="content-box">
+                <h3 class="subsection-title">Who Qualifies</h3>
+                <p>Our practice is designed for patients who meet these criteria:</p>
+                <ul class="checkmark-list">
+                    <li><strong>Traditional Medicare (Original Medicare):</strong> You have a red, white, and blue Medicare card—not a Medicare Advantage plan from a private insurer.</li>
+                    <li><strong>Homebound or have difficulty leaving home:</strong> Getting to a doctor's office requires considerable effort, special transportation, or assistance.</li>
+                    <li><strong>Live in our service area:</strong> Turner, Oxford, and surrounding Oxford Hills communities.</li>
+                </ul>
+            </div>
+
+            <div class="two-column" style="margin-top: 3rem;">
+                <div class="column">
+                    <div class="content-box">
+                        <h3 class="subsection-title">What Medicare Covers</h3>
+                        <p>Medicare covers medically necessary home visits for patients who have difficulty leaving their home. This includes:</p>
+                        <ul>
+                            <li>Home visits from a physician</li>
+                            <li>Annual wellness visits</li>
+                            <li>Chronic care management</li>
+                            <li>Care coordination</li>
+                            <li>Lab work and imaging (ordered and performed at approved facilities)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content-box">
+                        <h3 class="subsection-title">What You Pay</h3>
+                        <p>For most patients with Traditional Medicare and a supplemental (Medigap) policy, there is little to no out-of-pocket cost for home visits.</p>
+                        <p>If you have Traditional Medicare without a supplement, you may be responsible for the standard 20% coinsurance after your deductible is met.</p>
+                        <p class="highlight-text"><strong>We don't charge concierge fees.</strong> This is not a concierge practice. We bill Medicare directly for our services.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-box">
+                <p class="large-text">Not sure if you qualify? Call us at <a href="tel:207-492-4642">207-492-4642</a> and we'll help you figure it out.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Area -->
+    <section class="service-area">
+        <div class="container">
+            <h2 class="section-title centered">Service Area</h2>
+            <p class="section-intro centered">Second Mountain Internal Medicine provides home-based primary care throughout the Turner–Oxford Hills area</p>
+
+            <div class="communities-grid">
+                <div class="community">Turner</div>
+                <div class="community">Oxford</div>
+                <div class="community">Norway</div>
+                <div class="community">Paris</div>
+                <div class="community">Hebron</div>
+                <div class="community">Otisfield</div>
+                <div class="community">Buckfield</div>
+                <div class="community">Greenwood</div>
+                <div class="community">Surrounding Communities</div>
+            </div>
+
+            <div class="cta-box">
+                <p class="large-text">Not sure if you're in our service area? Call us at <a href="tel:207-492-4642">207-492-4642</a> and we'll let you know.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Get Started -->
+    <section class="get-started">
+        <div class="container">
+            <h2 class="section-title centered">How to Get Started</h2>
+
+            <div class="two-column" style="margin-top: 3rem;">
+                <div class="column">
+                    <div class="content-box">
+                        <h3 class="subsection-title">For Families</h3>
+                        <p>Getting started is simple:</p>
+                        <ol class="numbered-list">
+                            <li><strong>Call or text us at <a href="tel:207-492-4642">207-492-4642</a>.</strong> Tell us about your loved one and their situation. You can also fill out our online form.</li>
+                            <li><strong>We verify Medicare eligibility.</strong> We'll confirm that your loved one has Traditional Medicare and meets the criteria for home-based care.</li>
+                            <li><strong>We schedule the first home visit.</strong> Dr. Matulis will come to the home, meet the patient and family, review medical history, and create a care plan.</li>
+                            <li><strong>Ongoing care begins.</strong> Regular visits, available by phone, and coordination with other providers.</li>
+                        </ol>
+                        <a href="#contact" class="btn btn-primary">Contact Us →</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content-box">
+                        <h3 class="subsection-title">For Healthcare Providers</h3>
+                        <p>Referring a patient is easy:</p>
+                        <ul class="checkmark-list">
+                            <li><strong>Call or text:</strong> <a href="tel:207-492-4642">207-492-4642</a></li>
+                            <li><strong>Online:</strong> Use our secure provider referral form</li>
+                        </ul>
+                        <p><strong>Please include:</strong> patient name and contact info, Medicare ID, diagnosis and reason for referral, recent discharge summary (if applicable), and current medication list.</p>
+                        <a href="#contact" class="btn btn-primary">Refer a Patient →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- First Visit Expectations -->
+    <section class="first-visit">
+        <div class="container">
+            <h2 class="section-title centered">What to Expect on Your First Visit</h2>
+
+            <div class="three-column">
+                <div class="visit-phase">
+                    <h3>Before the Visit</h3>
+                    <ul>
+                        <li>Gather all your medications—prescription, over-the-counter, and supplements</li>
+                        <li>Have your Medicare card and any insurance cards ready</li>
+                        <li>Write down any questions or concerns you want to discuss</li>
+                        <li>If family members want to be present, let us know when scheduling</li>
+                    </ul>
+                </div>
+                <div class="visit-phase">
+                    <h3>During the Visit</h3>
+                    <p>The first visit typically takes 45-60 minutes. Dr. Matulis will:</p>
+                    <ul>
+                        <li>Review your complete medical history</li>
+                        <li>Perform a physical examination</li>
+                        <li>Review all your medications</li>
+                        <li>Discuss your health goals and concerns</li>
+                        <li>Assess your home environment for safety</li>
+                        <li>Create an initial care plan together</li>
+                    </ul>
+                </div>
+                <div class="visit-phase">
+                    <h3>After the Visit</h3>
+                    <ul>
+                        <li>We'll schedule follow-up visits based on your needs</li>
+                        <li>If labs or imaging are needed, we'll coordinate how to get them done</li>
+                        <li>Family members will receive updates (with your permission)</li>
+                        <li>You'll have a number to call or text with questions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2 class="section-title centered">Frequently Asked Questions</h2>
+
+            <div class="faq-list">
+                <div class="faq-item-full">
+                    <h3 class="faq-question-full">Is this real primary care, or just one-time house calls?</h3>
+                    <p class="faq-answer-full">This is real, ongoing primary care. Dr. Matulis becomes your primary care physician—seeing you regularly, managing your chronic conditions, and being available when you need him. This is not an urgent care or one-time visit service.</p>
+                </div>
+
+                <div class="faq-item-full">
+                    <h3 class="faq-question-full">Do I have to give up my current doctors?</h3>
+                    <p class="faq-answer-full">Not necessarily. Dr. Matulis serves as your primary care physician. You can keep seeing specialists as needed—we'll coordinate with them. If you have an existing PCP you want to keep, we can discuss how to structure care, but most patients transition fully to our practice.</p>
+                </div>
+
+                <div class="faq-item-full">
+                    <h3 class="faq-question-full">What if I need to see a doctor urgently?</h3>
+                    <p class="faq-answer-full">Call or text us. We do our best to be available and responsive. For true medical emergencies (chest pain, stroke symptoms, severe breathing difficulty, etc.), call 911.</p>
+                </div>
+
+                <div class="faq-item-full">
+                    <h3 class="faq-question-full">What happens after hours or on weekends?</h3>
+                    <p class="faq-answer-full">For emergencies, always call 911. For non-emergency concerns, please call or text our main number and we will respond as soon as possible.</p>
+                </div>
+
+                <div class="faq-item-full">
+                    <h3 class="faq-question-full">How much does this cost?</h3>
+                    <p class="faq-answer-full">For patients with Traditional Medicare and a Medigap supplement, most visits have little to no out-of-pocket cost. We bill Medicare directly. This is not a concierge practice—we don't charge membership fees.</p>
+                </div>
+
+                <div class="faq-item-full">
+                    <h3 class="faq-question-full">Do you accept Medicare Advantage plans?</h3>
+                    <p class="faq-answer-full">Currently, we only accept Traditional (Original) Medicare—the red, white, and blue card. We do not participate in Medicare Advantage plans. If you're not sure what type of Medicare you have, we can help you figure it out.</p>
+                </div>
+
+                <div class="faq-item-full">
+                    <h3 class="faq-question-full">What does "homebound" mean? Do I have to be bedridden?</h3>
+                    <p class="faq-answer-full">No, you don't have to be bedridden. "Homebound" for Medicare purposes means that leaving your home is difficult and requires considerable effort. You might need help from another person, a wheelchair or walker, or special transportation. Occasional trips to the doctor, church, or a family event don't disqualify you.</p>
+                </div>
+
+                <div class="faq-item-full">
+                    <h3 class="faq-question-full">Can you see patients in assisted living facilities?</h3>
+                    <p class="faq-answer-full">Yes. We provide care wherever you live—your own home, a family member's home, assisted living, or residential care facilities. We do not provide care in skilled nursing facilities (nursing homes) that have their own medical staff.</p>
+                </div>
+
+                <div class="faq-item-full">
+                    <h3 class="faq-question-full">How often will the doctor visit?</h3>
+                    <p class="faq-answer-full">Visit frequency depends on your medical needs. Some patients are seen monthly; others every few months. After a hospitalization or when conditions are unstable, we may visit more frequently. We'll work with you to determine the right schedule.</p>
+                </div>
+
+                <div class="faq-item-full">
+                    <h3 class="faq-question-full">Can family members be present during visits?</h3>
+                    <p class="faq-answer-full">Absolutely. We encourage it. Having family present helps everyone stay informed and involved in care decisions.</p>
+                </div>
+
+                <div class="faq-item-full">
+                    <h3 class="faq-question-full">What is a DO?</h3>
+                    <p class="faq-answer-full">A DO (Doctor of Osteopathic Medicine) is a fully licensed physician who can prescribe medication, perform procedures, and specialize in any area of medicine—just like an MD. DOs complete rigorous medical training and are held to the same standards. Many emphasize a whole-person approach to care.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title centered">Contact Us</h2>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H8.15287C8.64171 3 9.0589 3.35341 9.13927 3.8356L9.87858 8.27147C9.95075 8.70451 9.73206 9.13397 9.3394 9.3303L7.79126 10.1044C8.90756 12.8783 11.1217 15.0924 13.8956 16.2087L14.6697 14.6606C14.866 14.2679 15.2955 14.0492 15.7285 14.1214L20.1644 14.8607C20.6466 14.9411 21 15.3583 21 15.8471V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H17C8.71573 21 2 14.2843 2 6V4C2 3.46957 2.21071 2.96086 2.58579 2.58579C2.96086 2.21071 3.46957 2 4 2H7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h3>Phone</h3>
+                    <p><a href="tel:207-492-4642">207-492-4642</a> (call or text)</p>
+                </div>
+                <div class="contact-item">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.657 16.657L13.414 20.9C13.039 21.275 12.535 21.4846 12.0103 21.4846C11.4855 21.4846 10.9816 21.275 10.6066 20.9L6.36396 16.657C5.11351 15.4065 4.27543 13.8141 3.95134 12.0778C3.62726 10.3415 3.83272 8.54503 4.54084 6.92045C5.24896 5.29586 6.42949 3.92344 7.93142 2.98556C9.43335 2.04767 11.1864 1.58594 12.9636 1.66069C14.7407 1.73544 16.4497 2.34325 17.8687 3.40544C19.2878 4.46763 20.3528 5.93652 20.9316 7.61505C21.5104 9.29358 21.5775 11.1034 21.1242 12.8199C20.6709 14.5364 19.7174 16.0819 18.384 17.2686" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 13C13.1046 13 14 12.1046 14 11C14 9.89543 13.1046 9 12 9C10.8954 9 10 9.89543 10 11C10 12.1046 10.8954 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h3>Service Area</h3>
+                    <p>Turner–Oxford Hills Area, Maine</p>
+                </div>
+                <div class="contact-item">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3 8L12 13L21 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h3>Practice Type</h3>
+                    <p>Home-visit practice<br>Dr. Matulis comes to you</p>
+                </div>
+            </div>
+
+            <!-- Patient/Family Inquiry Form -->
+            <div class="form-section">
+                <h3 class="subsection-title centered">Patient & Family Inquiry Form</h3>
+                <p class="form-note">Note: This form is for general inquiries. A HIPAA-compliant form will be integrated for patient information.</p>
+                <form class="contact-form" id="patientForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contactName">Your Name*</label>
+                            <input type="text" id="contactName" name="contactName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactPhone">Your Phone*</label>
+                            <input type="tel" id="contactPhone" name="contactPhone" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contactEmail">Your Email</label>
+                            <input type="email" id="contactEmail" name="contactEmail">
+                        </div>
+                        <div class="form-group">
+                            <label for="patientName">Patient Name*</label>
+                            <input type="text" id="patientName" name="patientName" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="medicareType">Medicare Type*</label>
+                        <select id="medicareType" name="medicareType" required>
+                            <option value="">Select...</option>
+                            <option value="traditional">Traditional Medicare (Red, White, Blue Card)</option>
+                            <option value="advantage">Medicare Advantage</option>
+                            <option value="not-sure">Not Sure</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="situation">Brief Description of Situation*</label>
+                        <textarea id="situation" name="situation" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large">Submit Inquiry</button>
+                    <p class="form-disclaimer">By submitting this form, you consent to being contacted by Second Mountain Internal Medicine regarding your inquiry.</p>
+                </form>
+            </div>
+
+            <!-- Provider Referral Form -->
+            <div class="form-section" style="margin-top: 4rem;">
+                <h3 class="subsection-title centered">Provider Referral Form</h3>
+                <p class="form-note">Note: This form is for general referrals. A HIPAA-compliant secure form will be integrated for patient information.</p>
+                <form class="contact-form" id="referralForm">
+                    <h4>Referring Provider Information</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="providerName">Provider Name*</label>
+                            <input type="text" id="providerName" name="providerName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="providerOrganization">Organization/Hospital*</label>
+                            <input type="text" id="providerOrganization" name="providerOrganization" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="providerPhone">Phone*</label>
+                            <input type="tel" id="providerPhone" name="providerPhone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="providerEmail">Email*</label>
+                            <input type="email" id="providerEmail" name="providerEmail" required>
+                        </div>
+                    </div>
+
+                    <h4>Patient Information</h4>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="refPatientName">Patient Name*</label>
+                            <input type="text" id="refPatientName" name="refPatientName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="refPatientPhone">Patient Phone*</label>
+                            <input type="tel" id="refPatientPhone" name="refPatientPhone" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="refMedicareID">Medicare ID</label>
+                            <input type="text" id="refMedicareID" name="refMedicareID">
+                        </div>
+                        <div class="form-group">
+                            <label for="refPatientAddress">Patient Address*</label>
+                            <input type="text" id="refPatientAddress" name="refPatientAddress" required>
+                        </div>
+                    </div>
+
+                    <h4>Clinical Information</h4>
+                    <div class="form-group">
+                        <label for="diagnosis">Primary Diagnosis*</label>
+                        <input type="text" id="diagnosis" name="diagnosis" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reasonForReferral">Reason for Referral*</label>
+                        <textarea id="reasonForReferral" name="reasonForReferral" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="recentDischarge">Recent Hospital Discharge?</label>
+                        <select id="recentDischarge" name="recentDischarge">
+                            <option value="no">No</option>
+                            <option value="yes">Yes</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="additionalNotes">Additional Notes/Medications</label>
+                        <textarea id="additionalNotes" name="additionalNotes" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large">Submit Referral</button>
+                    <p class="form-disclaimer">By submitting this form, you consent to sharing patient information for care coordination purposes.</p>
+                </form>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-column">
+                <div class="footer-section">
+                    <h4>Second Mountain Internal Medicine, P.C.</h4>
+                    <p>Home-based primary care for homebound seniors in Turner and Oxford Hills, Maine</p>
+                    <p class="footer-contact">
+                        <a href="tel:207-492-4642">207-492-4642</a>
+                    </p>
+                </div>
+                <div class="footer-section">
                     <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="programs.html">Programs</a></li>
-                        <li><a href="impact.html">Impact</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                    <ul class="footer-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#who-we-serve">Who We Serve</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#medicare">Medicare & Eligibility</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h4>Programs</h4>
-                    <ul>
-                        <li><a href="programs.html#survival-kits">Winter Survival Kits</a></li>
-                        <li><a href="programs.html#mre-program">MRE Distribution</a></li>
-                        <li><a href="programs.html#outreach">Street Outreach</a></li>
-                        <li><a href="programs.html#housing">Housing Connections</a></li>
-                    </ul>
+                <div class="footer-section">
+                    <h4>Service Area</h4>
+                    <p>Turner, Oxford, Norway, Paris, Hebron, Otisfield, Buckfield, Greenwood, and surrounding Oxford Hills communities</p>
                 </div>
-                <div class="footer-column">
-                    <h4>Get Involved</h4>
-                    <ul>
-                        <li><a href="get-involved.html#funders">For Funders</a></li>
-                        <li><a href="get-involved.html#volunteers">For Volunteers</a></li>
-                        <li><a href="get-involved.html#corporate">For Corporate Partners</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Connect</h4>
-                    <p>Maine Winter Survival Initiative</p>
-                    <p>Portland, Maine</p>
-                    <p>Email: info@mainebeacon.org</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook">FB</a>
-                        <a href="#" aria-label="Instagram">IG</a>
-                        <a href="#" aria-label="LinkedIn">IN</a>
-                    </div>
+                <div class="footer-section">
+                    <h4>Dr. John C. Matulis, DO, MPH</h4>
+                    <p>Board-Certified Internal Medicine</p>
+                    <p>Traditional Medicare Accepted</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Maine Winter Survival Initiative. All rights reserved. | 501(c)(3) application pending</p>
+                <p>&copy; 2026 Second Mountain Internal Medicine, P.C. All rights reserved.</p>
+                <p class="footer-disclaimer">This website is for informational purposes only and does not constitute medical advice. Always consult with a qualified healthcare provider for medical guidance.</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
 </body>
 </html>
