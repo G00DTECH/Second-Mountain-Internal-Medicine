@@ -277,6 +277,11 @@ p {
     text-decoration: none;
 }
 
+.logo-image {
+    height: 50px;
+    width: auto;
+}
+
 .logo-text {
     font-family: var(--font-heading);
     font-size: 1.5rem;
@@ -687,25 +692,34 @@ tbody tr:last-child td {
     box-shadow: var(--shadow-md);
 }
 
-.doctor-image-placeholder {
-    background-color: var(--background-light);
-    border-radius: var(--radius-lg);
-    padding: 3rem 2rem;
+.doctor-image-wrapper {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 250px;
 }
 
-.doctor-image-placeholder svg {
-    color: var(--primary-color);
-    margin-bottom: 1rem;
+.doctor-headshot {
+    width: 100%;
+    max-width: 350px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    object-fit: cover;
 }
 
-.image-note {
-    font-size: 0.875rem;
+.family-photo-wrapper {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+.family-photo {
+    width: 100%;
+    max-width: 450px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    object-fit: cover;
+}
+
+.photo-caption {
+    margin-top: 0.75rem;
+    font-size: 0.9375rem;
     color: var(--text-light);
     font-style: italic;
 }
@@ -1296,6 +1310,10 @@ tbody tr:last-child td {
         margin-top: 1rem;
     }
 
+    .logo-image {
+        height: 40px;
+    }
+
     .hero {
         padding: 5rem 1.5rem 6rem;
     }
@@ -1391,6 +1409,31 @@ tbody tr:last-child td {
     th, td {
         padding: 1rem;
     }
+}
+
+/* ==========================================
+   Privacy Policy Page
+   ========================================== */
+.privacy-policy-section {
+    padding-top: 7rem;
+}
+
+.privacy-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.privacy-content .content-box {
+    margin-bottom: 1.5rem;
+}
+
+.privacy-content .subsection-title {
+    font-size: 1.5rem;
+}
+
+.privacy-content p,
+.privacy-content li {
+    line-height: 1.8;
 }
 
 /* ==========================================
