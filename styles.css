@@ -692,55 +692,135 @@ tbody tr:last-child td {
     box-shadow: var(--shadow-md);
 }
 
+/* Doctor Intro - Photo + Bio side by side */
+.doctor-intro {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
 .doctor-image-wrapper {
-    text-align: center;
+    flex-shrink: 0;
 }
 
 .doctor-headshot {
-    width: 100%;
-    max-width: 350px;
+    width: 220px;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-lg);
     object-fit: cover;
 }
 
-.family-photo-wrapper {
-    margin-top: 2.5rem;
-    text-align: center;
+.doctor-intro-text .large-text {
+    margin-bottom: 0;
+}
+
+/* Career Timeline */
+.timeline-heading,
+.credentials-heading {
+    font-size: 1.25rem;
+    font-family: var(--font-primary);
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.career-timeline {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 3rem;
+    border-left: 3px solid var(--primary-color);
+}
+
+.timeline-item {
+    position: relative;
+    padding: 0 0 2rem 1.5rem;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -2.45rem;
+    top: 0.25rem;
+    width: 14px;
+    height: 14px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    border: 3px solid var(--white);
+    box-shadow: 0 0 0 2px var(--primary-color);
+}
+
+.timeline-year {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1.125rem;
+    margin-bottom: 0.25rem;
+}
+
+.timeline-content {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Credential Chips */
+.credentials-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 3rem;
+}
+
+.credential-chip {
+    display: inline-block;
+    background-color: var(--accent-blue);
+    color: var(--primary-dark);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    border: 1px solid var(--primary-light);
+}
+
+/* Outside the Clinic */
+.outside-clinic {
+    background-color: var(--background-light);
+    padding: 2.5rem;
+    border-radius: var(--radius-lg);
+}
+
+.outside-clinic h4 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.outside-clinic-content {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.outside-clinic-text {
+    flex: 1;
+}
+
+.outside-clinic-text p {
+    margin-bottom: 0;
+    line-height: 1.8;
+}
+
+.outside-clinic-photo {
+    flex-shrink: 0;
 }
 
 .family-photo {
-    width: 100%;
-    max-width: 450px;
+    width: 250px;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-lg);
     object-fit: cover;
-}
-
-.photo-caption {
-    margin-top: 0.75rem;
-    font-size: 0.9375rem;
-    color: var(--text-light);
-    font-style: italic;
-}
-
-.credentials-list {
-    list-style: none;
-    margin-bottom: 2rem;
-}
-
-.credentials-list li {
-    padding: 0.5rem 0;
-    padding-left: 1.5rem;
-    position: relative;
-}
-
-.credentials-list li::before {
-    content: '✓';
-    position: absolute;
-    left: 0;
-    color: var(--secondary-color);
-    font-weight: 700;
 }
 
 /* ==========================================
@@ -1288,6 +1368,24 @@ tbody tr:last-child td {
 
     .communities-grid {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .doctor-intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .doctor-headshot {
+        width: 180px;
+    }
+
+    .outside-clinic-content {
+        flex-direction: column;
+    }
+
+    .family-photo {
+        width: 100%;
+        max-width: 300px;
     }
 
     .footer-content {
