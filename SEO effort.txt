@@ -1,0 +1,20 @@
+Your site is actually in really good shape content-wise. The copy is clear, well-structured, and speaks directly to your target audience. Here are specific SEO improvements you can make:
+
+**Title tag and meta description** — your title "Second Mountain Internal Medicine - Primary Care That Comes to You" is decent, but could be stronger for local SEO. Something like "Home-Based Primary Care for Seniors | Turner & Oxford Hills, Maine" would target the keywords people are actually searching. Add a meta description if you don't have one, something like "Dr. Matulis provides in-home primary care for homebound seniors in Turner, Oxford Hills, Auburn, and Lewiston, Maine. Traditional Medicare accepted."
+
+**Add schema markup** — this is structured data that tells Google exactly what your business is. I can generate a `LocalBusiness` and `Physician` schema block for you that includes your address, phone, service area, and specialties. This can help you appear in rich search results.
+
+**Internal page titles** — make sure your About, Services, FAQ, and Contact pages each have unique, descriptive title tags that include "Maine" or your service area towns.
+
+**Image alt text** — your logo image just says "logo.png." Give it descriptive alt text like "Second Mountain Internal Medicine logo."
+
+**Add a sitemap.xml** and submit it to Google Search Console if you haven't already. This helps Google discover and index all your pages.
+
+**Service area pages** — you list Auburn, Lewiston, Turner, Norway, Paris, Hebron, Minot, and Buckfield in your footer. Consider creating a simple service area page that mentions each town with a sentence or two. This helps you rank for "home visit doctor in [town name]" searches.
+
+**Missing opportunities:**
+- No blog yet — even a few posts about home-based primary care would help
+- Add a direct link to leave a Google review somewhere on the site
+- Consider adding a "conditions we manage" section for terms people search like "diabetes management at home" or "in-home blood pressure monitoring"
+
+Want me to generate the schema markup code you can paste into your site? That's probably the quickest win.

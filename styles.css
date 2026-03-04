@@ -278,7 +278,7 @@ p {
 }
 
 .logo-image {
-    height: 100px;
+    height: 64px;
     width: auto;
     max-width: 300px;
 }
@@ -448,12 +448,141 @@ p {
     overflow: hidden;
 }
 
-.hero-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
+/* Two-column hero grid */
+.hero-grid {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    gap: 3rem;
+    align-items: center;
     position: relative;
     z-index: 2;
+}
+
+.hero-left {
+    text-align: left;
+}
+
+.hero-left .hero-title {
+    font-size: 2.75rem;
+    text-align: left;
+}
+
+.hero-left .hero-subtitle {
+    text-align: left;
+}
+
+.hero-left .hero-cta {
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+}
+
+.hero-left .trust-bar {
+    justify-content: flex-start;
+    margin-top: 0;
+}
+
+.hero-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.hero-headshot {
+    width: 100%;
+    max-width: 300px;
+    border-radius: var(--radius-xl);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+}
+
+.pain-points-card {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: var(--radius-xl);
+    padding: 1.5rem 1.75rem;
+    width: 100%;
+    max-width: 300px;
+}
+
+.pain-points-headline {
+    font-size: 1.0625rem;
+    color: var(--white);
+    margin-bottom: 0.875rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.pain-points-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.pain-points-list li {
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 1rem; /* was 0.9rem — WCAG AA requires larger size at this contrast ratio */
+    padding-left: 1.375rem;
+    position: relative;
+}
+
+.pain-points-list li::before {
+    content: '✕';
+    position: absolute;
+    left: 0;
+    color: rgba(255, 155, 155, 0.95);
+    font-size: 0.65rem;
+    top: 0.225rem;
+}
+
+.pain-points-resolution {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: var(--white);
+    font-family: var(--font-heading);
+    letter-spacing: -0.01em;
+    margin: 0;
+}
+
+.hero-phone {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+    margin-bottom: 2rem;
+}
+
+.hero-phone-label {
+    color: rgba(255, 255, 255, 0.95); /* was 0.75 — failed WCAG AA contrast */
+    font-size: 0.9375rem;
+    white-space: nowrap;
+}
+
+.hero-phone-number {
+    color: var(--white);
+    font-size: 1.5rem;   /* reduced from 1.875rem — was competing with CTA button */
+    font-weight: 600;    /* reduced from 700 */
+    text-decoration: none;
+    letter-spacing: -0.02em;
+    line-height: 1;
+}
+
+.hero-phone-number:hover {
+    opacity: 0.9;
+    text-decoration: underline;
+}
+
+/* Hero CTA: green button against blue hero background for WCAG contrast compliance */
+.hero-left .btn-primary {
+    background-color: var(--secondary-color);
+}
+
+.hero-left .btn-primary:hover {
+    background-color: var(--secondary-dark);
 }
 
 .hero-title {
@@ -536,6 +665,86 @@ p {
 
 .solution-column .section-title {
     color: var(--secondary-color);
+}
+
+/* ==========================================
+   How It Works Section
+   ========================================== */
+.how-it-works {
+    background-color: var(--white);
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.step {
+    background-color: var(--background-light);
+    border-radius: var(--radius-lg);
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+.step-number {
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 auto 1.25rem;
+    flex-shrink: 0;
+}
+
+.step h3 {
+    font-size: 1.0625rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+    line-height: 1.3;
+}
+
+.step p {
+    color: var(--text-secondary);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.how-it-works-note {
+    margin-top: 2rem;
+    padding: 1rem 1.5rem;
+    background-color: var(--accent-blue);
+    border-left: 4px solid var(--primary-color);
+    border-radius: var(--radius-md);
+    color: var(--text-secondary);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+}
+
+.how-it-works-cta {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.how-it-works-cta .hero-phone {
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.how-it-works-cta .hero-phone-number {
+    color: var(--primary-color);
+}
+
+.how-it-works-cta .hero-phone-label {
+    color: var(--text-secondary);
 }
 
 /* ==========================================
@@ -1327,6 +1536,19 @@ tbody tr:last-child td {
     .two-column {
         gap: 2rem;
     }
+
+    .hero-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .hero-left .hero-title {
+        font-size: 2.25rem;
+    }
+
+    .steps-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 /* ==========================================
@@ -1465,6 +1687,53 @@ tbody tr:last-child td {
 
     .hero-subtitle {
         font-size: 1.125rem;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .hero-left {
+        text-align: center;
+        order: 1;
+    }
+
+    .hero-left .hero-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .hero-left .hero-subtitle {
+        text-align: center;
+    }
+
+    .hero-left .hero-cta {
+        justify-content: center;
+    }
+
+    .hero-left .trust-bar {
+        justify-content: center;
+    }
+
+    .hero-phone {
+        justify-content: center;
+    }
+
+    .hero-right {
+        order: 2;
+    }
+
+    .hero-headshot {
+        max-width: 240px;
+    }
+
+    .pain-points-card {
+        max-width: 100%;
+    }
+
+    .steps-grid {
+        grid-template-columns: 1fr;
     }
 
     .hero-cta {
@@ -1621,6 +1890,12 @@ select:focus-visible,
 textarea:focus-visible {
     outline: 3px solid var(--primary-color);
     outline-offset: 2px;
+}
+
+/* White focus ring on blue hero — primary blue outline is invisible there (WCAG failure) */
+.hero a:focus-visible,
+.hero button:focus-visible {
+    outline-color: var(--white);
 }
 
 /* Print styles */

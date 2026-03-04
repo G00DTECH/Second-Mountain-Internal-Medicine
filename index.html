@@ -11,13 +11,91 @@
     <meta property="og:title" content="Second Mountain Internal Medicine - Primary Care That Comes to You">
     <meta property="og:description" content="Comprehensive home-based primary care for homebound seniors in Turner-Oxford Hills, Maine. Traditional Medicare accepted.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://secondmountaininternalmedicine.com/">
+    <meta property="og:image" content="https://secondmountaininternalmedicine.com/logo.png">
+    <meta property="og:site_name" content="Second Mountain Internal Medicine, P.C.">
 
-    <title>Second Mountain Internal Medicine, P.C. - Home-Based Primary Care in Turner & Oxford Hills, Maine</title>
+    <title>Second Mountain Internal Medicine, P.C. - Home-Based Primary Care in Oxford Hills & Auburn, Maine</title>
 
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon (consider creating a proper 32x32 favicon.ico for best browser support) -->
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
+
+    <!-- Canonical URL (update secondmountaininternalmedicine.com with your actual domain) -->
+    <link rel="canonical" href="https://secondmountaininternalmedicine.com/">
+
+    <!-- Schema.org Structured Data: MedicalBusiness + Physician -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "MedicalBusiness",
+          "@id": "https://secondmountaininternalmedicine.com/#organization",
+          "name": "Second Mountain Internal Medicine, P.C.",
+          "alternateName": "Second Mountain Internal Medicine",
+          "description": "Home-based primary care for homebound seniors in Oxford Hills and Auburn, Maine. Traditional Medicare accepted.",
+          "url": "https://secondmountaininternalmedicine.com",
+          "telephone": "+12074924642",
+          "image": "https://secondmountaininternalmedicine.com/logo.png",
+          "logo": "https://secondmountaininternalmedicine.com/logo.png",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Auburn",
+            "addressRegion": "ME",
+            "addressCountry": "US"
+          },
+          "areaServed": [
+            {"@type": "City", "name": "Turner"},
+            {"@type": "City", "name": "Auburn"},
+            {"@type": "City", "name": "Lewiston"},
+            {"@type": "City", "name": "Norway"},
+            {"@type": "City", "name": "Paris"},
+            {"@type": "City", "name": "Hebron"},
+            {"@type": "City", "name": "Minot"},
+            {"@type": "City", "name": "Buckfield"}
+          ],
+          "medicalSpecialty": [
+            "https://schema.org/PrimaryCare",
+            "https://schema.org/HomeHealth"
+          ],
+          "paymentAccepted": "Traditional Medicare",
+          "availableService": [
+            {"@type": "MedicalTherapy", "name": "Primary Care at Home"},
+            {"@type": "MedicalTherapy", "name": "Chronic Disease Management"},
+            {"@type": "MedicalTherapy", "name": "Post-Hospital Follow-Up"},
+            {"@type": "MedicalTherapy", "name": "Medication Management"},
+            {"@type": "MedicalTherapy", "name": "Dementia and Cognitive Care"},
+            {"@type": "MedicalTherapy", "name": "Frailty and Functional Decline"},
+            {"@type": "MedicalTherapy", "name": "Palliative Support"},
+            {"@type": "MedicalTherapy", "name": "Care Coordination"}
+          ],
+          "employee": {
+            "@id": "https://secondmountaininternalmedicine.com/#physician"
+          }
+        },
+        {
+          "@type": "Physician",
+          "@id": "https://secondmountaininternalmedicine.com/#physician",
+          "name": "John C. Matulis",
+          "honorificPrefix": "Dr.",
+          "honorificSuffix": "DO, MPH",
+          "jobTitle": "Board-Certified Internal Medicine Physician",
+          "description": "Board-certified internal medicine physician providing home-based primary care for homebound seniors in Oxford Hills and Auburn, Maine.",
+          "medicalSpecialty": "https://schema.org/PrimaryCare",
+          "worksFor": {
+            "@id": "https://secondmountaininternalmedicine.com/#organization"
+          },
+          "image": "https://secondmountaininternalmedicine.com/headshot.jpg"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- Mobile Menu Toggle -->
@@ -32,7 +110,7 @@
         <div class="container">
             <div class="nav-content">
                 <a href="index.html" class="logo">
-                    <img src="logo.png" alt="Second Mountain Internal Medicine, P.C." class="logo-image" width="100" height="100">
+                    <img src="logo.png" alt="Second Mountain Internal Medicine, P.C." class="logo-image" width="64" height="64">
                 </a>
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="index.html" class="nav-link">Home</a></li>
@@ -49,33 +127,46 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Primary Care That Comes to You</h1>
-                <p class="hero-subtitle">Comprehensive, ongoing medical care for homebound seniors in the Turner–Oxford Hills area. Traditional Medicare accepted.</p>
-                <div class="hero-cta">
-                    <a href="tel:207-492-4642" class="btn btn-primary btn-large">
-                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2 3C2 2.44772 2.44772 2 3 2H5.15287C5.64171 2 6.0589 2.35341 6.13927 2.8356L6.87858 7.27147C6.95075 7.70451 6.73206 8.13397 6.3394 8.3303L4.79126 9.10437C5.90756 11.8783 8.12168 14.0924 10.8956 15.2087L11.6697 13.6606C11.866 13.2679 12.2955 13.0492 12.7285 13.1214L17.1644 13.8607C17.6466 13.9411 18 14.3583 18 14.8471V17C18 17.5523 17.5523 18 17 18H15C7.8203 18 2 12.1797 2 5V3Z" fill="currentColor"/>
-                        </svg>
-                        Call or Text: 207-492-4642
-                    </a>
-                    <a href="contact.html" class="btn btn-secondary btn-large">
-                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2.00333 5.88355L9.99995 9.88186L17.9967 5.8835C17.9363 4.83315 17.0655 4 16 4H4C2.93452 4 2.06363 4.83318 2.00333 5.88355Z" fill="currentColor"/>
-                            <path d="M18 8.1179L9.99995 12.1179L2 8.11796V14C2 15.1046 2.89543 16 4 16H16C17.1046 16 18 15.1046 18 14V8.1179Z" fill="currentColor"/>
-                        </svg>
-                        Refer a Patient
-                    </a>
+            <div class="hero-grid">
+
+                <!-- Left: Headline + CTAs -->
+                <div class="hero-left">
+                    <h1 class="hero-title">Home-Based Internal Medicine in Oxford Hills & Auburn, Maine</h1>
+                    <p class="hero-subtitle">Dr. Matulis is a board-certified internist who comes to your home — perfect for older adults who can't easily get to the clinic.</p>
+                    <div class="hero-cta">
+                        <a href="contact.html" class="btn btn-primary btn-large">Schedule a Free 15-Minute Caregiver Call</a>
+                    </div>
+                    <div class="hero-phone">
+                        <span class="hero-phone-label">Or Call Now</span>
+                        <a href="tel:207-492-4642" class="hero-phone-number">207-492-4642</a>
+                    </div>
+                    <div class="trust-bar">
+                        <span class="trust-item">Traditional Medicare Accepted</span>
+                        <span class="trust-divider">•</span>
+                        <span class="trust-item">Board-Certified Internist</span>
+                        <span class="trust-divider">•</span>
+                        <span class="trust-item">Home Visits Only</span>
+                    </div>
                 </div>
-                <div class="trust-bar">
-                    <span class="trust-item">Traditional Medicare Accepted</span>
-                    <span class="trust-divider">•</span>
-                    <span class="trust-item">Home Visits</span>
-                    <span class="trust-divider">•</span>
-                    <span class="trust-item">Board-Certified Internal Medicine</span>
-                    <span class="trust-divider">•</span>
-                    <span class="trust-item">Locally Owned</span>
+
+                <!-- Right: Headshot + Pain Points -->
+                <div class="hero-right">
+                    <img src="headshot.jpg"
+                         alt="Dr. John Matulis, DO, MPH — home-based primary care physician serving Oxford Hills and Auburn, Maine"
+                         class="hero-headshot">
+                    <div class="pain-points-card">
+                        <p class="pain-points-headline">Caring for an aging parent is overwhelming.</p>
+                        <ul class="pain-points-list">
+                            <li>Multiple specialists</li>
+                            <li>Long waits</li>
+                            <li>Transportation challenges</li>
+                            <li>Dementia progression</li>
+                            <li>Medicare confusion</li>
+                        </ul>
+                        <p class="pain-points-resolution">I come to you.</p>
+                    </div>
                 </div>
+
             </div>
         </div>
         <div class="hero-wave">
@@ -85,17 +176,37 @@
         </div>
     </section>
 
-    <!-- Problem Solution Section -->
-    <section class="problem-solution">
+    <!-- How It Works Section -->
+    <section class="how-it-works">
         <div class="container">
-            <div class="two-column">
-                <div class="column problem-column">
-                    <h2 class="section-title">The Problem</h2>
-                    <p class="large-text">For some seniors, getting to the doctor can be tough. Many families are left scrambling to coordinate transportation, manage multiple specialists, and worry about whether their loved one is getting the care they need.</p>
+            <h2 class="section-title centered">How It Works</h2>
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Free 15-Minute Caregiver Call</h3>
+                    <p>We discuss your loved one's situation and whether home-based primary care is the right fit — no obligation.</p>
                 </div>
-                <div class="column solution-column">
-                    <h2 class="section-title">The Solution</h2>
-                    <p class="large-text">We bring the doctor to them. Dr. Matulis provides primary care in the comfort of your loved one's home—managing chronic conditions, coordinating with specialists, and keeping patients out of the hospital.</p>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Comprehensive Home Visit</h3>
+                    <p>Dr. Matulis comes to your home for a thorough first appointment — no waiting rooms, no rushing.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Ongoing Primary Care at Home</h3>
+                    <p>Regular visits tailored to your loved one's needs, with the same doctor every time.</p>
+                </div>
+            </div>
+
+            <div class="how-it-works-note">
+                <strong>Traditional Medicare Accepted</strong> — We accept Traditional Medicare. We do not participate in Medicare Advantage plans.
+            </div>
+
+            <div class="how-it-works-cta">
+                <a href="contact.html" class="btn btn-primary btn-large">Schedule a Free 15-Minute Caregiver Call</a>
+                <div class="hero-phone">
+                    <span class="hero-phone-label">Or Call Now</span>
+                    <a href="tel:207-492-4642" class="hero-phone-number">207-492-4642</a>
                 </div>
             </div>
         </div>
