@@ -54,7 +54,3 @@ This website was created specifically for Second Mountain Internal Medicine, P.C
 For technical issues with the website, refer to this README or contact Justin.
 
 For practice information, call: **207-492-4642**
-
----
-
-**Ready to Deploy!** Simply drag the folder to Netlify or follow the deployment steps above.
