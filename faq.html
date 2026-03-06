@@ -39,6 +39,28 @@
     <!-- Canonical URL (update secondmountaininternalmedicine.com with your actual domain) -->
     <link rel="canonical" href="https://secondmountaininternalmedicine.com/faq.html">
 
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://secondmountaininternalmedicine.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "FAQ",
+          "item": "https://secondmountaininternalmedicine.com/faq.html"
+        }
+      ]
+    }
+    </script>
+
     <!-- Schema.org FAQPage — enables rich FAQ results in Google Search -->
     <script type="application/ld+json">
     {
@@ -131,6 +153,46 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Yes. We provide care wherever you live—your own home, a family member's home, assisted living, or residential care facilities. We do not provide care in skilled nursing facilities (nursing homes) that have their own medical staff."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Medicare cover house calls for seniors in Maine?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Traditional Medicare (Original Medicare) covers medically necessary home visits for patients who have difficulty leaving home. This applies throughout Maine, including the Oxford Hills region, Auburn, Lewiston, Turner, Norway, and Paris. Dr. Matulis bills Medicare directly — there are no extra fees or membership charges."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between home-based primary care and home health services in Maine?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Home health services — such as nursing visits or physical therapy — are ordered by a physician and address a specific condition for a limited period. Home-based primary care means Dr. Matulis is your actual primary care physician. He manages your overall health, prescribes medications, orders labs, coordinates specialist care, and sees you on an ongoing basis — from your home."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "My parent lives in Norway or Paris, Maine. Can they get a home doctor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We serve Norway, Paris, South Paris, and the surrounding Oxford Hills communities, including Hebron, Buckfield, Otisfield, and Oxford. Call 207-492-4642 to confirm your parent's address is in our service area."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a discharge planner at a Maine hospital refer a patient to Second Mountain?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We accept referrals from discharge planners, social workers, and care coordinators at hospitals throughout the Oxford Hills and Lewiston-Auburn area. Call or text 207-492-4642. We can typically schedule an initial visit within days of discharge."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Dr. Matulis accepting new patients in Oxford Hills, Maine?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, Dr. Matulis is currently accepting new homebound patients with Traditional Medicare in the Oxford Hills region and Lewiston-Auburn area. Call 207-492-4642 to get started."
           }
         }
       ]
@@ -241,6 +303,37 @@
                     <p class="faq-answer-full">Yes. We provide care wherever you live—your own home, a family member's home, assisted living, or residential care facilities. We do not provide care in skilled nursing facilities (nursing homes) that have their own medical staff.</p>
                 </div>
 
+                <!-- Medicare & Maine -->
+                <h3 class="faq-group-title">Medicare &amp; Maine</h3>
+
+                <div class="faq-item-full">
+                    <h3 class="faq-question-full">Does Medicare cover house calls for seniors in Maine?</h3>
+                    <p class="faq-answer-full">Yes. Traditional Medicare (Original Medicare) covers medically necessary home visits for patients who have difficulty leaving home. This applies throughout Maine, including the Oxford Hills region, Auburn, Lewiston, Turner, Norway, and Paris. Dr. Matulis bills Medicare directly — there are no extra fees or membership charges.</p>
+                </div>
+
+                <div class="faq-item-full">
+                    <h3 class="faq-question-full">What is the difference between home-based primary care and home health services in Maine?</h3>
+                    <p class="faq-answer-full">Home health services — such as nursing visits or physical therapy — are ordered by a physician and address a specific condition for a limited period. Home-based primary care means Dr. Matulis is your actual primary care physician. He manages your overall health, prescribes medications, orders labs, coordinates specialist care, and sees you on an ongoing basis — from your home.</p>
+                </div>
+
+                <div class="faq-item-full">
+                    <h3 class="faq-question-full">My parent lives in Norway or Paris, Maine. Can they get a home doctor?</h3>
+                    <p class="faq-answer-full">Yes. We serve Norway, Paris, South Paris, and the surrounding Oxford Hills communities, including Hebron, Buckfield, Otisfield, and Oxford. Call <a href="tel:207-492-4642">207-492-4642</a> to confirm your parent's address is in our service area.</p>
+                </div>
+
+                <!-- For Healthcare Providers -->
+                <h3 class="faq-group-title">For Healthcare Providers</h3>
+
+                <div class="faq-item-full">
+                    <h3 class="faq-question-full">Can a discharge planner at a Maine hospital refer a patient to Second Mountain?</h3>
+                    <p class="faq-answer-full">Yes. We accept referrals from discharge planners, social workers, and care coordinators at hospitals throughout the Oxford Hills and Lewiston-Auburn area. Call or text <a href="tel:207-492-4642">207-492-4642</a>. We can typically schedule an initial visit within days of discharge. See our <a href="referrals.html">referrals page</a> for full details.</p>
+                </div>
+
+                <div class="faq-item-full">
+                    <h3 class="faq-question-full">Is Dr. Matulis accepting new patients in Oxford Hills, Maine?</h3>
+                    <p class="faq-answer-full">Yes, Dr. Matulis is currently accepting new homebound patients with Traditional Medicare in the Oxford Hills region and Lewiston-Auburn area. Call <a href="tel:207-492-4642">207-492-4642</a> to get started.</p>
+                </div>
+
             </div>
         </div>
     </section>
@@ -274,6 +367,8 @@
                         <li><a href="services.html">Services</a></li>
                         <li><a href="faq.html">FAQ</a></li>
                         <li><a href="contact.html">Contact</a></li>
+                        <li><a href="service-area.html">Service Area</a></li>
+                        <li><a href="referrals.html">Referrals</a></li>
                         <li><a href="privacy-policy.html">Privacy Policy</a></li>
                     </ul>
                 </div>
