@@ -1,0 +1,9 @@
+# Old nested copies — not part of the live site
+second-mountain-website/
+
+# Temp print file used to generate PDF
+sow-print.html
+
+# OS
+.DS_Store
+Thumbs.db
