@@ -61,18 +61,194 @@
     }
     </script>
 
-    <!-- Schema.org FAQPage — enables rich FAQ results in Google Search -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "@id": "https://secondmountaininternalmedicine.com/#organization",
+      "name": "Second Mountain Internal Medicine, P.C.",
+      "alternateName": "Second Mountain Internal Medicine",
+      "description": "Home-based primary care for homebound seniors in Lewiston, Auburn, and Oxford Hills, Maine. Medicare accepted.",
+      "url": "https://secondmountaininternalmedicine.com",
+      "telephone": "+12074924642",
+      "image": "https://secondmountaininternalmedicine.com/logo.png",
+      "logo": "https://secondmountaininternalmedicine.com/logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Auburn",
+        "addressRegion": "ME",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Turner"
+        },
+        {
+          "@type": "City",
+          "name": "Auburn"
+        },
+        {
+          "@type": "City",
+          "name": "Lewiston"
+        },
+        {
+          "@type": "City",
+          "name": "Norway"
+        },
+        {
+          "@type": "City",
+          "name": "Paris"
+        },
+        {
+          "@type": "City",
+          "name": "Hebron"
+        },
+        {
+          "@type": "City",
+          "name": "Minot"
+        },
+        {
+          "@type": "City",
+          "name": "Buckfield"
+        }
+      ],
+      "medicalSpecialty": [
+        "https://schema.org/PrimaryCare",
+        "https://schema.org/HomeHealth"
+      ],
+      "paymentAccepted": "Medicare",
+      "availableService": [
+        {
+          "@type": "MedicalTherapy",
+          "name": "Primary Care at Home"
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Chronic Disease Management"
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Post-Hospital Follow-Up"
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Medication Management"
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Dementia and Cognitive Care"
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Frailty and Functional Decline"
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Palliative Support"
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Care Coordination"
+        }
+      ],
+      "employee": {
+        "@id": "https://secondmountaininternalmedicine.com/#physician"
+      },
+      "sameAs": [
+        "https://share.google/0FrK30sKB10vhlPHW",
+        "https://www.healthgrades.com/physician/dr-john-matulis-g9ybx"
+      ],
+      "hasMap": "https://share.google/0FrK30sKB10vhlPHW"
+    },
+    {
+      "@type": [
+        "MedicalClinic",
+        "LocalBusiness"
+      ],
+      "@id": "https://secondmountaininternalmedicine.com/#clinic",
+      "name": "Second Mountain Internal Medicine, P.C.",
+      "telephone": "+12074924642",
+      "url": "https://secondmountaininternalmedicine.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "758 Buckfield Rd",
+        "addressLocality": "Hebron",
+        "addressRegion": "ME",
+        "postalCode": "04238",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 44.2559,
+        "longitude": -70.2534
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "17:00"
+        }
+      ],
+      "medicalSpecialty": "http://schema.org/InternalMedicine",
+      "parentOrganization": {
+        "@id": "https://secondmountaininternalmedicine.com/#organization"
+      }
+    },
+    {
+      "@type": "Physician",
+      "@id": "https://secondmountaininternalmedicine.com/#physician",
+      "name": "John C. Matulis",
+      "honorificPrefix": "Dr.",
+      "honorificSuffix": "DO, MPH",
+      "jobTitle": "Board-Certified Internal Medicine Physician",
+      "description": "Board-certified internal medicine physician providing home-based primary care for homebound seniors in Oxford Hills and Auburn, Maine.",
+      "medicalSpecialty": "https://schema.org/PrimaryCare",
+      "worksFor": {
+        "@id": "https://secondmountaininternalmedicine.com/#organization"
+      },
+      "image": "https://secondmountaininternalmedicine.com/headshot.jpg",
+      "sameAs": "https://www.healthgrades.com/physician/dr-john-matulis-g9ybx",
+      "identifier": {
+        "@type": "PropertyValue",
+        "name": "NPI",
+        "value": "1891013140"
+      },
+      "hospitalAffiliation": {
+        "@type": "Hospital",
+        "name": "Mayo Clinic Hospital, Saint Marys Campus",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Rochester",
+          "addressRegion": "MN",
+          "addressCountry": "US"
+        }
+      }
+    },
+    {
       "@type": "FAQPage",
+      "@id": "https://secondmountaininternalmedicine.com/faq.html#webpage",
+      "url": "https://secondmountaininternalmedicine.com/faq.html",
+      "name": "Frequently Asked Questions",
+      "isPartOf": {
+        "@id": "https://secondmountaininternalmedicine.com/#organization"
+      },
       "mainEntity": [
         {
           "@type": "Question",
           "name": "Is this real primary care, or just one-time house calls?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "This is real, ongoing primary care. Dr. Matulis becomes your primary care physician—seeing you regularly, managing your chronic conditions, and being available when you need him. This is not an urgent care or one-time visit service."
+            "text": "This is real, ongoing primary care. Dr. Matulis becomes your primary care physician, seeing you regularly, managing your chronic conditions, and being there when you need him. Not urgent care. Not a one-time visit."
           }
         },
         {
@@ -80,7 +256,7 @@
           "name": "Do I have to give up my current doctors?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Not necessarily. Dr. Matulis serves as your primary care physician. You can keep seeing specialists as needed—we'll coordinate with them. If you have an existing PCP you want to keep, we can discuss how to structure care, but most patients transition fully to our practice."
+            "text": "Not necessarily. Dr. Matulis serves as your primary care physician. You can keep seeing specialists as needed and we'll coordinate with them. If you have an existing PCP you'd like to keep, we can talk through how that works, though most patients transition fully to our practice."
           }
         },
         {
@@ -104,7 +280,7 @@
           "name": "What is a DO?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A DO (Doctor of Osteopathic Medicine) is a fully licensed physician who can prescribe medication, perform procedures, and specialize in any area of medicine—just like an MD. DOs complete rigorous medical training and are held to the same standards. Many emphasize a whole-person approach to care."
+            "text": "A DO is a fully licensed physician with the same training requirements and scope of practice as an MD. Dr. Matulis can prescribe medication, perform procedures, and specialize in internal medicine just as any physician would. Many DOs bring a whole-person perspective to care, which fits well with what we do."
           }
         },
         {
@@ -112,7 +288,15 @@
           "name": "How much does this cost?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "For patients with Medicare and a Medigap supplement, most visits have little to no out-of-pocket cost. We bill Medicare directly. This is not a concierge practice—we don't charge membership fees."
+            "text": "For patients with Medicare and a Medigap supplement, most visits have little to no out-of-pocket cost. We bill Medicare directly. This is not a concierge practice and we don't charge membership fees."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Medicare cover home visits?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Medicare covers medically necessary home visits for patients who have difficulty leaving home. Call us at 207-492-4642 and we'll help you verify your eligibility at no obligation."
           }
         },
         {
@@ -133,10 +317,10 @@
         },
         {
           "@type": "Question",
-          "name": "What does 'homebound' mean? Do I have to be bedridden?",
+          "name": "What does \"homebound\" mean? Do I have to be bedridden?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No, you don't have to be bedridden. 'Homebound' for Medicare purposes means that leaving your home is difficult and requires considerable effort. You might need help from another person, a wheelchair or walker, or special transportation. Occasional trips to the doctor, church, or a family event don't disqualify you."
+            "text": "No, you don't have to be bedridden. \"Homebound\" for Medicare purposes means that leaving your home is difficult and requires considerable effort. You might need help from another person, a wheelchair or walker, or special transportation. Occasional trips to the doctor, church, or a family event don't disqualify you."
           }
         },
         {
@@ -144,7 +328,7 @@
           "name": "Can you see patients in assisted living facilities?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. We provide care wherever you live—your own home, a family member's home, assisted living, or residential care facilities. We do not provide care in skilled nursing facilities (nursing homes) that have their own medical staff."
+            "text": "Yes. We provide care wherever you live: your own home, a family member's home, assisted living, or a residential care facility. We don't provide care in skilled nursing facilities that have their own medical staff."
           }
         },
         {
@@ -152,7 +336,7 @@
           "name": "Does Medicare cover house calls for seniors in Maine?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Medicare covers medically necessary home visits for patients who have difficulty leaving home. This applies throughout Maine, including the Oxford Hills region, Auburn, Lewiston, Turner, Norway, and Paris. Dr. Matulis bills Medicare directly — there are no extra fees or membership charges."
+            "text": "Yes. Medicare covers medically necessary home visits for patients who have difficulty leaving home. This applies throughout Maine, including the Oxford Hills region, Auburn, Lewiston, Turner, Norway, and Paris. Dr. Matulis bills Medicare directly. No extra fees, no membership charges."
           }
         },
         {
@@ -160,7 +344,7 @@
           "name": "What is the difference between home-based primary care and home health services in Maine?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Home health services — such as nursing visits or physical therapy — are ordered by a physician and address a specific condition for a limited period. Home-based primary care means Dr. Matulis is your actual primary care physician. He manages your overall health, prescribes medications, orders labs, coordinates specialist care, and sees you on an ongoing basis — from your home."
+            "text": "Home health services, like nursing visits or physical therapy, are ordered by a physician and address a specific condition for a limited time. Home-based primary care is different: Dr. Matulis is your actual primary care physician. He manages your overall health, prescribes medications, orders labs, coordinates specialist care, and sees you on an ongoing basis, in your home."
           }
         },
         {
@@ -176,7 +360,7 @@
           "name": "Can a discharge planner at a Maine hospital refer a patient to Second Mountain?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. We accept referrals from discharge planners, social workers, and care coordinators at hospitals throughout the Oxford Hills and Lewiston-Auburn area. Call or text 207-492-4642. We can typically schedule an initial visit within days of discharge."
+            "text": "Yes. We accept referrals from discharge planners, social workers, and care coordinators at hospitals throughout the Oxford Hills and Lewiston-Auburn area. Call or text 207-492-4642. We can typically schedule an initial visit within days of discharge. See our referrals page for full details."
           }
         },
         {
@@ -189,6 +373,8 @@
         }
       ]
     }
+  ]
+}
     </script>
 </head>
 <body>

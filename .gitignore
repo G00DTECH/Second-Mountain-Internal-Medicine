@@ -4,6 +4,10 @@ second-mountain-website/
 # Temp print file used to generate PDF
 sow-print.html
 
+# Local-only billing — not part of the live site
+invoice.html
+invoice.pdf
+
 # OS
 .DS_Store
 Thumbs.db
